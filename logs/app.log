@@ -1,0 +1,48 @@
+2025/09/09 11:47:52 main.go:51: Migration completed
+2025/09/09 11:47:52 Application.go:38: Connected to PostgreSQL
+2025/09/09 11:47:52 Application.go:41: Connected to Redis
+2025/09/09 11:47:52 Application.go:85: REST API running on :8080
+2025/09/09 11:47:52 Application.go:78: gRPC server running on :50051
+2025/09/09 11:48:05 Application.go:95: Shutting down...
+2025/09/09 11:48:05 Application.go:104: PostgreSQL connection closed
+2025/09/09 11:48:05 Application.go:108: Redis connection closed
+2025/09/09 11:48:05 Application.go:111: Application stopped
+2025/09/09 12:08:31 main.go:51: Migration completed
+2025/09/09 12:08:31 Application.go:38: Connected to PostgreSQL
+2025/09/09 12:08:31 Application.go:41: Connected to Redis
+2025/09/09 12:08:31 Application.go:85: REST API running on :8080
+2025/09/09 12:08:31 Application.go:78: gRPC server running on :50051
+2025/09/09 12:09:00 CommandService.go:54: Sending command to router SN123456789
+2025/09/09 12:09:00 CommandService.go:54: Sending command to router SN987654321
+2025/09/09 12:09:00 CommandService.go:86: Commands sent.
+2025/09/09 12:11:14 Application.go:95: Shutting down...
+2025/09/09 12:11:14 Application.go:104: PostgreSQL connection closed
+2025/09/09 12:11:14 Application.go:108: Redis connection closed
+2025/09/09 12:11:14 Application.go:111: Application stopped
+2025/09/09 12:13:46 main.go:51: Migration completed
+2025/09/09 12:13:46 Application.go:38: Connected to PostgreSQL
+2025/09/09 12:13:46 Application.go:41: Connected to Redis
+2025/09/09 12:13:46 Application.go:85: REST API running on :8080
+2025/09/09 12:13:46 Application.go:78: gRPC server running on :50051
+2025/09/09 12:18:28 Application.go:95: Shutting down...
+2025/09/09 12:18:28 Application.go:104: PostgreSQL connection closed
+2025/09/09 12:18:28 Application.go:108: Redis connection closed
+2025/09/09 12:18:28 Application.go:111: Application stopped
+2025/09/09 12:19:51 main.go:51: Migration completed
+2025/09/09 12:19:51 Application.go:38: Connected to PostgreSQL
+2025/09/09 12:19:51 Application.go:41: Connected to Redis
+2025/09/09 12:19:51 Application.go:85: REST API running on :8080
+2025/09/09 12:19:51 Application.go:78: gRPC server running on :50051
+2025/09/09 12:19:57 Application.go:95: Shutting down...
+2025/09/09 12:19:57 Application.go:104: PostgreSQL connection closed
+2025/09/09 12:19:57 Application.go:108: Redis connection closed
+2025/09/09 12:19:57 Application.go:111: Application stopped
+2025/09/09 12:21:29 main.go:51: Migration completed
+2025/09/09 12:21:29 Application.go:38: Connected to PostgreSQL
+2025/09/09 12:21:29 Application.go:41: Connected to Redis
+2025/09/09 12:21:29 Application.go:85: REST API running on :8080
+2025/09/09 12:21:29 Application.go:78: gRPC server running on :50051
+2025/09/09 12:21:39 Application.go:95: Shutting down...
+2025/09/09 12:21:39 Application.go:104: PostgreSQL connection closed
+2025/09/09 12:21:39 Application.go:108: Redis connection closed
+2025/09/09 12:21:39 Application.go:111: Application stopped

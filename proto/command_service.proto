@@ -1,0 +1,84 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+import "google/api/annotations.proto";
+
+
+package proto;
+option go_package = "./internal/pb";
+
+// информация о роутере
+message Router{
+    string router_id = 1;
+    string serial_number = 2;
+}
+
+// тело отправки команды роутеру
+message SendCommandRequest{
+    repeated Router routers = 1;
+    string command_type = 2;
+}
+
+// тело запроса команд роутера
+message PollRequest{
+    string router_id = 1;
+    string serial_number = 2;
+}
+
+// тело запроса "ack"
+message AckRequest{
+    string router_id = 1;
+    string serial_number = 2;
+    string command_type = 3;
+}
+
+// ответ на отправку команды = статус
+message SendCommandResponse {
+    string status = 1;
+    repeated string id = 2;
+}
+
+// информация о команде роутера
+message Command{
+    string id = 1;
+    string command_type = 2;
+    string payload = 3;
+    google.protobuf.Timestamp created_at = 4;
+}
+
+// список команд роутера
+message PollResponse{
+    repeated Command commands = 1;
+}
+
+// ответ на "ack" = статус 'ACKED'
+message AckResponse{
+    string status = 1;
+}
+
+service CommandService{
+
+    // POST /api/v1/send_command
+    rpc SendCommand(SendCommandRequest) returns (SendCommandResponse) {
+        option (google.api.http) = {
+            post: "/api/v1/send_command"
+            body: "*"
+        };
+    }
+
+    // POST /api/v1/poll
+    rpc PollCommands(PollRequest) returns (PollResponse) {
+        option (google.api.http) = {
+            post: "/api/v1/commands/poll"
+            body: "*"
+        };
+    }
+
+    //POST /api/v1/ack
+    rpc AckCommand(AckRequest) returns (AckResponse) {
+        option (google.api.http) = {
+            post: "/api/v1/commands/ack"
+            body: "*"
+        };
+    }
+}
